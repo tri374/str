@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 public class Programm
 {
@@ -58,13 +59,12 @@ public class Programm
                 y++;
                 if (arr[y] < m) m = arr[y];
             }
-            int a = -1;
             int q = arr[0];
-            foreach (int e in arr)
+            foreach (int w in arr)
             {
-                a++;
-                if (q > arr[a])
-                    q = arr[a];
+                if (q > w)
+                    q = w;
+
             }
             Console.WriteLine("\nМинимальное число(for): " + min);
             Console.WriteLine("\nМинимальное число(while): " + m);
@@ -85,17 +85,16 @@ public class Programm
                 y++;
                 if (arr[y] > m) m = arr[y];
             }
-            int a = -1;
-            int q = arr[0];
-            foreach (int e in arr)
+            int ma = arr[0];
+            foreach (int v in arr)
             {
-                a++;
-                if (q < arr[a])
-                    q = arr[a];
+                if (ma < v)
+                    ma = v;
+
             }
             Console.WriteLine("\nМаксимальное число(for): " + mx);
             Console.WriteLine("\nМаксимальное число(while): " + m);
-            Console.WriteLine("\nМаксимальное число(foreach): " + q);
+            Console.WriteLine("\nМаксимальное число(foreach): " + ma);
         }
     }
 }
