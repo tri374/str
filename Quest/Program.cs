@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Security.Cryptography.X509Certificates;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
 public class Programm
 {
     public static void Main()
@@ -90,7 +87,7 @@ public class Programm
             {
                 if (ma < v)
                     ma = v;
-
+                return;
             }
             Console.WriteLine("\nМаксимальное число(for): " + mx);
             Console.WriteLine("\nМаксимальное число(while): " + m);
