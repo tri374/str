@@ -5,19 +5,33 @@ using System.Xml.Linq;
 
 public class Programm 
 {
-        class Human
+    public class Passport
     {
-        public class Passport;
+        public string Name = "not";
+        public void PushName(string name)
+        {
+            Name = name;
+        }
     }
-    class Passport
+    class Human
     {
-        public string Name;
+        Passport passport = new Passport();
+        public string ToName()
+        {
+            string name = passport.Name;
+            return name;
+        }
+        public void PushName(string name)
+        {
+            passport.PushName(name);
+        }
     }
     static void Main(string[] args)
     {
         Human human = new Human();
-        Passport passport = new Passport();
-        passport.Name = "Чел";
-        Console.WriteLine(passport.Name);
+        human.PushName("Чел");
+        Console.WriteLine(human.ToName());
+        human.PushName("Челик");
+        Console.WriteLine(human.ToName());
     }
 }
