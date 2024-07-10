@@ -9,7 +9,7 @@ public class Programm
         public string Name;
         public void PushName(string name)
         {
-            Name = name; //Если писать Humans.Name = Name Ругается на то что Human остаётся null.
+            Name = name;
         }
     }
     static void Main(string[] args)
