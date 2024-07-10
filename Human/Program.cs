@@ -6,27 +6,16 @@ public class Programm
 {
         class Human
     {
-        public string Name = "Not";
-    }
-
-    class List
-    {
-        public Human Humans;
-        public string PresentName()
-            {
-                return Humans.Name;
-            }
-        public void PushName(string Name)
+        public string Name;
+        public void PushName(string name)
         {
-            Humans = new Human{ Name = Name }; //Если писать Humans.Name = Name Ругается на то что Human остаётся null.
-            }
+            Name = name; //Если писать Humans.Name = Name Ругается на то что Human остаётся null.
+        }
     }
     static void Main(string[] args)
     {
-        List list = new List();
-        list.PushName("Человечек");
-        Console.WriteLine(list.PresentName());
-        list.PushName("Чел");
-        Console.WriteLine(list.PresentName());
+        Human human = new Human();
+        human.PushName("Чел");
+        Console.WriteLine(human.Name);
     }
 }
