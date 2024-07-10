@@ -18,7 +18,7 @@ public class Programm
             }
         public void PushName(string Name)
         {
-            Humans = new Human{ Name = Name };
+            Humans = new Human{ Name = Name }; //Если писать Humans.Name = Name Ругается на то что Human остаётся null.
             }
     }
     static void Main(string[] args)
