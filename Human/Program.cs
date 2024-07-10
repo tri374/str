@@ -6,16 +6,15 @@ public class Programm
 {
         class Human
     {
-        public string Name;
-        public void PushName(string name)
+        public class Passport
         {
-            Name = name;
+            public string Name;
         }
     }
     static void Main(string[] args)
     {
-        Human human = new Human();
-        human.PushName("Чел");
-        Console.WriteLine(human.Name);
+        Human.Passport passport = new Human.Passport();
+        passport.Name = "Чел";
+        Console.WriteLine(passport.Name);
     }
 }
