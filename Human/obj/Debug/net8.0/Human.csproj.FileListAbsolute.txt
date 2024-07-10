@@ -1,0 +1,15 @@
+C:\Users\B-ZONE\Desktop\Projects\str\Human\bin\Debug\net8.0\Human.exe
+C:\Users\B-ZONE\Desktop\Projects\str\Human\bin\Debug\net8.0\Human.deps.json
+C:\Users\B-ZONE\Desktop\Projects\str\Human\bin\Debug\net8.0\Human.runtimeconfig.json
+C:\Users\B-ZONE\Desktop\Projects\str\Human\bin\Debug\net8.0\Human.dll
+C:\Users\B-ZONE\Desktop\Projects\str\Human\bin\Debug\net8.0\Human.pdb
+C:\Users\B-ZONE\Desktop\Projects\str\Human\obj\Debug\net8.0\Human.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B-ZONE\Desktop\Projects\str\Human\obj\Debug\net8.0\Human.AssemblyInfoInputs.cache
+C:\Users\B-ZONE\Desktop\Projects\str\Human\obj\Debug\net8.0\Human.AssemblyInfo.cs
+C:\Users\B-ZONE\Desktop\Projects\str\Human\obj\Debug\net8.0\Human.csproj.CoreCompileInputs.cache
+C:\Users\B-ZONE\Desktop\Projects\str\Human\obj\Debug\net8.0\Human.sourcelink.json
+C:\Users\B-ZONE\Desktop\Projects\str\Human\obj\Debug\net8.0\Human.dll
+C:\Users\B-ZONE\Desktop\Projects\str\Human\obj\Debug\net8.0\refint\Human.dll
+C:\Users\B-ZONE\Desktop\Projects\str\Human\obj\Debug\net8.0\Human.pdb
+C:\Users\B-ZONE\Desktop\Projects\str\Human\obj\Debug\net8.0\Human.genruntimeconfig.cache
+C:\Users\B-ZONE\Desktop\Projects\str\Human\obj\Debug\net8.0\ref\Human.dll
