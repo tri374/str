@@ -12,7 +12,7 @@ public class Programm
     class List
     {
         public Human Humans;
-        public string GetName()
+        public string PresentName()
             {
                 return Humans.Name;
             }
@@ -25,8 +25,8 @@ public class Programm
     {
         List list = new List();
         list.PushName("Человечек");
-        Console.WriteLine(list.GetName());
+        Console.WriteLine(list.PresentName());
         list.PushName("Чел");
-        Console.WriteLine(list.GetName());
+        Console.WriteLine(list.PresentName());
     }
 }
