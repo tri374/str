@@ -1,0 +1,5 @@
+C:\Users\B-ZONE\Desktop\Projects\str\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B-ZONE\Desktop\Projects\str\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfoInputs.cache
+C:\Users\B-ZONE\Desktop\Projects\str\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfo.cs
+C:\Users\B-ZONE\Desktop\Projects\str\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\B-ZONE\Desktop\Projects\str\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.sourcelink.json

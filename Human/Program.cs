@@ -1,37 +1,67 @@
-﻿using System; //Использование библиотеки System
-using System.Collections.Generic; //Использование библиотеки System.Collections.Generic
-using System.Security.Cryptography; //Использование библиотеки System.Security.Cryptography
-using System.Xml.Linq; //Использование библиотеки System.Xml.Linq
-
-public class Programm //Общий класс, Структура даных
+﻿using System;
+using System.Collections.Generic; 
+using System.Security.Cryptography; 
+using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+public class Vector 
 {
-    class Passport //Переменная содержащая, так и другие переменные, так и функции.
+    public int size = 1;
+    int[] mas;
+    public void Push(int a)
     {
-        public string Name = "not"; //Переменная string с именем "Name" которой присвоено строчка "not". Public окрывает доступ к переменной для других классов.
-        public void PushName(string name) //Функция для присвоении имени.
+        if (mas == null)
         {
-            Name = name; //Присвоение новой строчки к переменной Name.
+            mas = new int[1];
+            mas[0] = a;
+        }
+        else
+        {
+            int[] masCopy = mas;
+            mas = new int[size + 1];
+            for(int i = 0; i < size; i++)
+            {
+                mas[i] = masCopy[i];
+            }
+            mas[size] = a;
+            size++;
         }
     }
-    class Human //Tоже самое что и у 7 строки.
+    public int Pull()
     {
-        Passport passport = new Passport(); //Создание объекта отссылающая на класс Passport.
-        public string ToName() //Класс который возращает переменую string.
+        size--;
+        int x = mas[size];
+        int[] masCopy = mas;
+        mas = new int[size];
+        for (int i = 0; i < size; i++)
         {
-            string name = passport.Name; //Присвоение Name взятая из passport к переменной name.
-            return name; //Возращение переменной name.
+            mas[i] = masCopy[i];
         }
-        public void PushName(string name) //Класс void к которому можно дальше ссылаться для работы команд, также он не возвращает значения.
-        {
-            passport.PushName(name); //ССылка к функции внутри объекта passport.
-        }
+        return x;
     }
-    static void Main(string[] args) //static обозначает что у этого класса не может быть копий.
+}
+public class Programm
+{ 
+    static void Main() 
     {
-        Human human = new Human(); //Создание объекта отссылающая на класс Human.
-        human.PushName("Чел"); //Присвоение строки для переменной name в функции PUshName.
-        Console.WriteLine(human.ToName()); //Выводит строку которое возвращается из функции ToName. 
-        human.PushName("Челик"); //↑↑
-        Console.WriteLine(human.ToName()); //↑↑
+        Vector vector = new Vector();
+        DateTime now = DateTime.Now;
+        for (int i = 0; i <= 100000; i++)
+        {
+            vector.Push(i);
+        }
+        DateTime now2 = DateTime.Now;
+        Console.WriteLine(now2.Subtract(now));
+        //vector.Push(3);
+        //vector.Push(8);
+        //vector.Push(10);
+        //vector.Push(13);
+        //vector.Push(22);
+        //vector.Push(15);
+        //Console.WriteLine($"Массив содержит {vector.size} элементов" + "\nПоследннее число:" + vector.Pull() + "");
+        //Console.WriteLine($"Массив содержит {vector.size} элементов" + "\nПоследннее число:" + vector.Pull());
+        //Console.WriteLine($"Массив содержит {vector.size} элементов" + "\nПоследннее число:" + vector.Pull());
+        //Console.WriteLine($"Массив содержит {vector.size} элементов" + "\nПоследннее число:" + vector.Pull());
+        //Console.WriteLine($"Массив содержит {vector.size} элементов" + "\nПоследннее число:" + vector.Pull());
+        //Console.WriteLine($"Массив содержит {vector.size} элементов" + "\nПоследннее число:" + vector.Pull());
     }
 }
