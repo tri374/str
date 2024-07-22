@@ -63,7 +63,18 @@ public class Program
         }
         public int GetLength()
         {
-            return 0;
+            int length = 0;
+            if (FirstNode == null)
+            {
+                return 0;
+            }
+            Node CurrectNode = FirstNode;
+            while (CurrectNode.Next != null)
+            {
+                CurrectNode = CurrectNode.Next;
+                length++;
+            } 
+            return length+1;
         }
     }
     static void Main(string[] args)
@@ -81,6 +92,7 @@ public class Program
         Console.WriteLine(list.GetValue(1));
         Console.WriteLine(list.GetValue(2));
         Console.WriteLine(list.GetValue(3));
+        Console.WriteLine(list.GetLength());
     }
 }
 
