@@ -80,19 +80,13 @@ public class Program
     static void Main(string[] args)
     {
         List list = new List();
-        list.Push(1);
-        list.Push(2);
-        list.Push(3);
-        list.Push(4);
-        list.Push(5);
-        list.Push(6);
-        list.Delete(0);
-        list.Delete(3);
-        Console.WriteLine(list.GetValue(0));
-        Console.WriteLine(list.GetValue(1));
-        Console.WriteLine(list.GetValue(2));
-        Console.WriteLine(list.GetValue(3));
-        Console.WriteLine(list.GetLength());
+        DateTime date1 = DateTime.Now;
+        for (int i = 0; i <= 100000;  i++)
+        {
+            list.Push(i);
+        }
+        DateTime date2 = DateTime.Now;
+        Console.WriteLine(date2.Subtract(date1)); // 10эл. - 00:00:00.0054566;100эл. - 00:00:00.0064691;1000эл. - 00:00:00.0088136;10000эл. - 00:00:00.0657253;100000эл. - 
     }
 }
 
