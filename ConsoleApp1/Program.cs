@@ -85,8 +85,8 @@ public class Program
         {
             list.Push(i);
         }
-        DateTime date2 = DateTime.Now;
-        Console.WriteLine(date2.Subtract(date1)); // 10эл. - 00:00:00.0054566;100эл. - 00:00:00.0064691;1000эл. - 00:00:00.0088136;10000эл. - 00:00:00.0657253;100000эл. - 
+        DateTime date2 = DateTime.Now; // 10эл. - 00:00:00.0054566;100эл. - 00:00:00.0064691;1000эл. - 00:00:00.0088136;10000эл. - 00:00:00.0657253;
+        Console.WriteLine(date2.Subtract(date1)); //100000эл. - 00:00:05.7045365;
     }
 }
 
