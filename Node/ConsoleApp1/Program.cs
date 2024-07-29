@@ -25,7 +25,7 @@ public class Program
                 if (CurrectNode.Next != null)
                 {
                     for (int i = 0; i < index; i++)
-                    CurrectNode = CurrectNode.Next;
+                        CurrectNode = CurrectNode.Next;
                 }
                 return CurrectNode.Value;
             }
@@ -35,18 +35,16 @@ public class Program
             if (FirstNode == null)
             {
                 FirstNode = new Node() { Value = newValue };
-                LastNode = FirstNode
+                LastNode = FirstNode;
             }
             else
             {
                 Node CurrectNode = LastNode;
-                while (CurrectNode.Next != null)
-                {
-                    CurrectNode = CurrectNode.Next;
-                }
                 Node NewNode = new Node() { Value = newValue };
                 CurrectNode.Next = NewNode;
+                LastNode = CurrectNode.Next;
             }
+            
             length++;
 
         }
@@ -56,11 +54,11 @@ public class Program
                 FirstNode = FirstNode.Next;
             else
             {
-                
+
                 Node CurrectNode = FirstNode;
                 if (CurrectNode.Next != null)
                 {
-                    for (int i = 0; i < index-1; i++)
+                    for (int i = 0; i < index - 1; i++)
                         CurrectNode = CurrectNode.Next;
                 }
                 CurrectNode.Next = CurrectNode.Next.Next;
@@ -78,12 +76,12 @@ public class Program
         DateTime date1;
         DateTime date2;
         date1 = DateTime.Now;
-        for (int i = 0; i <= 10000; i++)
+        for (int i = 0; i <= 500000; i++)
         {
             list.Push(i);
         }
         date2 = DateTime.Now;
-        Console.WriteLine("10.000 Элементов - " + date2.Subtract(date1));
+        Console.WriteLine("500.000 Элементов - " + date2.Subtract(date1));
     }
 }
 
