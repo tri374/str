@@ -83,6 +83,10 @@ public class Program
             }
             length--;
         }
+        //public int GetLength()
+        //{
+        //    return length;
+        //}
     }
     static void Main(string[] args)
     {
